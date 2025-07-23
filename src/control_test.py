@@ -1,8 +1,9 @@
 import ctypes
 import struct, time
 import numpy as np
+import os
 
-CONST_DLL_VJOY = "vJoyInterface.dll"
+CONST_DLL_VJOY = os.path.join(os.path.dirname(__file__), "vJoyInterface.dll")
 
 class vJoy(object):
     def __init__(self, reference = 1):

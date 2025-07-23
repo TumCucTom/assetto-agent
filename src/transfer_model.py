@@ -57,6 +57,8 @@ def test_model_on_assetto_corsa(model, env, num_episodes=5):
         while not done:
             # Get action from model
             action, _states = model.predict(obs, deterministic=True)
+            if isinstance(action, np.ndarray):
+                action = int(action.item())
             
             # Execute action
             obs, reward, done, info = env.step(action)
