@@ -1,26 +1,36 @@
-# Core dependencies for data collection
-pygame>=2.0.0
-opencv-python>=4.5.0
-numpy>=1.19.0
-mss>=6.0.0
-Pillow>=8.0.0
+# Core RL and ML libraries
+stable-baselines3>=2.0.0
+gym>=0.26.0
+torch>=1.13.0
+tensorboard>=2.12.0
 
-# Machine learning dependencies
-# tensorflow>=1.15.0,<2.0.0  # For LaneNet compatibility
-# keras>=2.3.0
-# scikit-learn>=0.24.0
-torch
-stable_baselines3
-gym
+# Computer vision and image processing
+opencv-python>=4.8.0
+Pillow>=9.5.0
 
+# Numerical computing
+numpy>=1.24.0
+scipy>=1.10.0
 
-# Data processing
-pandas>=1.3.0
-matplotlib>=3.3.0
+# Data handling and utilities
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
 
-# Utilities
-loguru>=0.5.0
-tqdm>=4.60.0
+# Game interaction (Windows only)
+# vjoy (install manually from https://github.com/shauleiz/vJoy)
+# pyvjoy (install manually: pip install pyvjoy)
 
-# Optional: For enhanced data collection
-psutil>=5.8.0  # For system monitoring 
+# Optional: Enhanced features
+# tensorflow>=2.13.0  # For LaneNet
+# keras>=2.13.0       # For LaneNet
+# scikit-learn>=1.3.0 # For additional ML utilities
+
+# Development and testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Jupyter for analysis (optional)
+jupyter>=1.0.0
+ipykernel>=6.25.0 
